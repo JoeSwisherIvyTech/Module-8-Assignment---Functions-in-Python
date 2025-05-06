@@ -7,9 +7,18 @@ Type "help", "copyright", "credits" or "license()" for more information.
 ...         return False
 ... 
 ...     
+>>> def output_result(result):
+...     print("The statement " + str(a) + " is greater than " + str(b) + " is " + str(result))
+...     return
+... 
 >>> a = 2
 >>> b = 3
 >>> 
 >>> result = greater_than(a, b)
->>> print("The statement " + str(a) + " is greater than " + str(b) + " is " + str(result))
+>>> output_result(result)
 The statement 2 is greater than 3 is False
+>>> a = 10
+>>> b = 6
+>>> result = greater_than(a, b)
+>>> output_result(result)
+The statement 10 is greater than 6 is True
